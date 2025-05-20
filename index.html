@@ -1,81 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym_Site</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-</head>
-<body>
-    <section class="header">
-        <nav>
-            <a href="index.html"><img src="logo.jpg" alt="check logo img"></a>
-            <div class="nav-links" id="navlinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <span>EUGEN IS HERE!!!</span>
-                <span>Another task</span>
-                <ul>
-                    <li><a href="">HOME2</a></li>
-                    <li>nuconteaza</li>
-                    <li><a href="">ABOUT</a></li>
-                    <li><a href="">PLANS</a></li>
-                    <li><a href="">BLOG</a></li>
-                    <li><a href="">CONTACT</a></li>
-                    <li>Adress</li>
-                    <li>gmap</li>
-                </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gym_Site</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        />
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"
+                    ><img src="logo.jpg" alt="check logo img"
+                /></a>
+                <div class="nav-links" id="navlinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">PLANS</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="text-box">
+                <h1>ALPHA GYM</h1>
+                <p>Push limits. Build confidence. Transform your life.</p>
+                <a href="" class="hero-btn">Visit us to know more</a>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
+        </section>
 
-        <div class="text-box">
-            <h1>ALPHA GYM</h1>
-            <P>Push limits. Build confidence. Transform your life.
-            </P>
-            <a href="" class="hero-btn">Visit us to know more</a>
-        </div>
+        <!----Course-->
+        <section id="plans">
+            <h1>Plans</h1>
+            <p>
+                Plan with purpose, train with passion - your goals won't wait.
+            </p>
 
-    </section>
-
-    <!----Course-->
-    <section class="plans">
-        <h1>Plans</h1>
-        <p>Plan with purpose, train with passion - your goals won't wait.</p>
-
-        <div class="row">
-            <div class="plans-col">
-                <h3>Low</h3>
-                <p>Cel mai ieftin abonament</p>
+            <div class="row">
+                <div class="plans-col">
+                    <h3>Low</h3>
+                    <p>Cel mai ieftin abonament</p>
+                </div>
+                <div class="plans-col">
+                    <h3>Medium</h3>
+                    <p>Abonament mediu</p>
+                </div>
+                <div class="plans-col">
+                    <h3>Hight</h3>
+                    <p>Cel mai scump abonament</p>
+                </div>
             </div>
-            <div class="plans-col">
-                <h3>Medium</h3>
-                <p>Abonament mediu</p>
-            </div>
-            <div class="plans-col">
-                <h3>Hight</h3>
-                <p>Cel mai scump abonament</p>
-            </div>
-        </div>
+        </section>
 
-    </section>
+        <script>
+            var navlinks = document.getElementById("navlinks");
 
-
-<!--<script>-->
-<!--    var navlinks = document.getElementById("navlinks");-->
-
-<!--    function showMenu(){-->
-<!--        navlinks.style.right = "0";-->
-<!--    }-->
-<!--    function hideMenu(){-->
-<!--        navlinks.style.right = "-200px";-->
-<!--    }-->
-
-<!--</script>-->
-
-</body>
+            function showMenu() {
+                navlinks.style.right = "0";
+            }
+            function hideMenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </body>
 </html>
